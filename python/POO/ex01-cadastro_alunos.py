@@ -1,40 +1,44 @@
-class Aluno:
-    def __init__(self, nome, media):
-        self.nome = nome
-        self.media = media
-
-    def listar():
-        print(f"\n| {"Nome":^15} | {"Média":^5} |")
-        print("-" * 27)
-        for i in range(len(alunos)):
-            print(f"| {alunos[i].nome:^15} | {alunos[i].media:^5} |")
-
-alunos = []
-
-print(f"{" ESCOLINHA DO JAGUNÇO ":=^50}")
+import os
+from functions import Aluno
 
 while True:
-    opcao = int(input('''
+    os.system("cls")
+    try:
+        print(f"{" ESCOLINHA DO JAGUNÇO ":=^50}")
+        opcao = int(input('''
 Escolha uma opção:                           
     [1] Cadastrar aluno
-    [2] Listar alunos cadastrados
+    [2] Editar cadastro de aluno
     [3] Remover cadastro de aluno
-    [4] Editar cadastro de aluno
+    [4] Listar alunos cadastrados
     [5] Calcular média da turma
     -> '''))
+    except:
+        input("\n ***Valor digitado incorreto. Tente novamente pressionando ENTER.")
+        continue
 
     match (opcao):
         case 1:
             nome = input("\n - Digite o nome do aluno: ")
             media = float(input(" - Digite a média do aluno: "))
-            alunos.append(Aluno(nome, media))
+            Aluno(nome, media)
         case 2:
-            Aluno.listar()
+            identificador = input("\n - Digite o ID ou nome do aluno a ser editado: ")
+            Aluno.editar(identificador)
         case 3:
-            pass
+            identificador = input("\n - Digite o ID ou nome do aluno a ser removido: ")
+            try:
+                identificador = int(identificador)
+            except:
+                pass
+            finally:
+                Aluno.remover(identificador) 
         case 4:
-            pass
+            Aluno.listar()
         case 5:
             pass
         case _:
-            pass
+            input("\n ***Valor incorreto digitado. Pressione ENTER para tentar novamente.")
+            continue
+
+    input("\n *Pressione ENTER para continuar.")
