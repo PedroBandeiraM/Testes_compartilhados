@@ -61,7 +61,7 @@ As informaçõs novas são:
 
     @classmethod
     def listar(cls):
-        if not(Aluno.alunos):
+        if not(cls.alunos):
             print(" -> Não é possível listar, pois não há alunos cadastrados.")
             return
         
@@ -69,8 +69,8 @@ As informaçõs novas são:
         print(f"{" ":<3}", "-" * 39)
         print(f"{f"| {"ID":^4} | {"Nome":^20} | {"Média":^5} |":^47}")
         print(f"{" ":<3}", "-" * 39)
-        for i in range(len(Aluno.alunos)):
-            print(f"{f"| {Aluno.alunos[i].identificador:^4} | {Aluno.alunos[i].nome:^20} | {Aluno.alunos[i].media:^5} |":^47}")
+        for i in range(len(cls.alunos)):
+            print(f"{f"| {cls.alunos[i].identificador:^4} | {cls.alunos[i].nome:^20} | {cls.alunos[i].media:^5} |":^47}")
         print(f"{" ":<3}", "-" * 39)
 
 
