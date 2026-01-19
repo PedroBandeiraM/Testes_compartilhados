@@ -1,5 +1,5 @@
 import os
-from functions import Aluno
+from python.POO.ex01_functions import Aluno
 
 while True:
     os.system("cls")
