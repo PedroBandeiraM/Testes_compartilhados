@@ -7,7 +7,6 @@ class Aluno:
     def media(self):
         return round(self._media, 2)
     
-
     @media.setter
     def media(self, valor):
         if (isinstance(valor, str)):
