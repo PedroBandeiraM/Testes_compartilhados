@@ -2,7 +2,7 @@ package conceitosBasicos;
 
 import java.util.Scanner;
 
-public class AAA_entradaSaida {
+public class A_entradaSaida {
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		

@@ -2,7 +2,7 @@ package conceitosBasicos;
 
 import java.util.Scanner;
 
-public class AAA_tiposPrimitivos {
+public class B_tiposPrimitivos {
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		
