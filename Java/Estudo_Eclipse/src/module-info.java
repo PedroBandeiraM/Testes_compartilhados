@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Aprendendo_java {
+module Java_Eclipse {
 }
