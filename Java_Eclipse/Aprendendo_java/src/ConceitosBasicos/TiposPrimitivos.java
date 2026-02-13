@@ -1,10 +1,28 @@
 package ConceitosBasicos;
 
+import java.util.Scanner;
+
 public class TiposPrimitivos {
 
 	public static void main(String[] args) {
-		String nome = "Pedro";
-		System.out.printf("Nome: %s", nome);
+		Scanner leitor = new Scanner(System.in);
+		
+		System.out.println("Digite seu nome: ");
+		String nome = leitor.nextLine();
+		System.out.println("Digite sua idade: ");
+		int idade = leitor.nextInt();
+		
+		leitor.nextLine();
+		
+		System.out.println("Digite o gênero [M/F]: ");
+		char gen = leitor.nextLine().charAt(0);
+		
+		boolean sono = true;
+		
+		System.out.println();
+		System.out.printf("Nome: %s %nIdade: %d %nGênero: %s %nSono: %b", nome, idade, gen, sono);
+		
+		leitor.close();
 	}
 
 }

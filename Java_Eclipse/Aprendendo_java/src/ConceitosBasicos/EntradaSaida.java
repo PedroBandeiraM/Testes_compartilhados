@@ -1,11 +1,18 @@
 package ConceitosBasicos;
+import java.util.Scanner;
 
 public class EntradaSaida {
 
 	public static void main(String[] args) {
-		System.out.println("Java é uma merda");
-		System.out.println("Eclipse consegue ser pior");
+		Scanner leitor = new Scanner(System.in);
 		
+		System.out.println("Digite seu nome: ");
+		String nome = leitor.nextLine();
+	
+		System.out.println();
+		System.out.printf("Nome: " + nome);
+		
+		leitor.close();
 	}
 
 }
