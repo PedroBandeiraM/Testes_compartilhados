@@ -2,7 +2,7 @@ package conceitosBasicos;
 
 import java.util.Scanner;
 
-public class B_tiposPrimitivos {
+public class AAA_tiposPrimitivos {
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		
@@ -24,7 +24,7 @@ public class B_tiposPrimitivos {
 		boolean sono = true;
 		
 		System.out.println();
-		System.out.printf("Nome: %s %nIdade: %d %nAltura: %f %nGênero: %s %nSono: %b", nome, idade, altura, gen, sono);
+		System.out.printf("Nome: %s %nIdade: %d %nAltura: %.2f %nGênero: %s %nSono: %b", nome, idade, altura, gen, sono);
 		
 		leitor.close();
 	}
