@@ -7,8 +7,8 @@ public class C_operacoesMatematicas {
 		int num_3 = 25;
 		int num_4 = 2;
 		
-		System.out.printf("Número: %n%n");
-		System.out.printf("Número 1: %d %nNúmero 2: %d %nNúmero 3: %d", num_1, num_2, num_3);
+		System.out.printf("Números: %n%n");
+		System.out.printf("Número 1: %d %nNúmero 2: %d %nNúmero 3: %d %nNúmero 4: %d %n%n", num_1, num_2, num_3, num_4);
 		
 		int soma = num_2 + num_3;
 		int sub = num_3 - num_2;
