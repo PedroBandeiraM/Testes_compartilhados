@@ -1,4 +1,4 @@
-package conceitosBasicos;
+package A_conceitosBasicos;
 
 public class C_operacoesMatematicas {
 	public static void main(String[] args) {

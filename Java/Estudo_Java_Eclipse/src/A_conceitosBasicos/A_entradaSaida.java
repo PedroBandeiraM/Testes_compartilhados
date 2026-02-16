@@ -1,4 +1,4 @@
-package conceitosBasicos;
+package A_conceitosBasicos;
 
 import java.util.Scanner;
 

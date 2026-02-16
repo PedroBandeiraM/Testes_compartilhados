@@ -1,11 +1,10 @@
 // Calculadora: área de um círculos
 
-package exer_conceitosBasicos;
+package A_conceitosBasicos;
 
 import java.util.Scanner;
 
-public class AreaCirculo {
-	
+public class Z_exer_AreaCirculo {
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		

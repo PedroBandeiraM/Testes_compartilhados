@@ -1,8 +1,8 @@
-package exer_conceitosBasicos;
+package A_conceitosBasicos;
 
 import java.util.Scanner;
 
-public class OperacaoGenerica {
+public class Z_exer_OperacaoGenerica {
 
 		public static void main(String[] args) {
 			Scanner leitor = new Scanner(System.in);
