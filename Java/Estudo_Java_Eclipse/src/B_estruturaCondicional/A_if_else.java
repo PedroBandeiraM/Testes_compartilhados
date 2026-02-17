@@ -9,9 +9,11 @@ public class A_if_else {
 			
 			if (hora_atual >= 6 && hora_atual <= 12) {
 				System.out.printf("Bom dia! Agora são: %d hora(s)", hora_atual);
-			} else if (hora_atual > 12 && hora_atual < 18) {
+			} 
+			else if (hora_atual > 12 && hora_atual < 18) {
 				System.out.printf("Boa tarde! Agora são: %d hora(s)", hora_atual);
-			} else {
+			} 
+			else {
 				System.out.printf("Boa noite! Agora são: %d hora(s)", hora_atual);
 			}
 		}
