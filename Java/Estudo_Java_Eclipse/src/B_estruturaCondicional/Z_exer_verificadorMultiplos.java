@@ -2,7 +2,7 @@ package B_estruturaCondicional;
 
 import java.util.Scanner;
 
-public class Z_exer_multiplos {
+public class Z_exer_verificadorMultiplos {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
