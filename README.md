@@ -1,2 +1,2 @@
 # Testes_compartilhados
-Repositório para testar e praticar conhecimentos
+Repositório para estudos: treinar e praticar novas linguagens e testar conceitos
