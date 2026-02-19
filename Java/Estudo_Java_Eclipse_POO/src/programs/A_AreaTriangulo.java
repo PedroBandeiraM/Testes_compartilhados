@@ -1,9 +1,9 @@
 package programs;
 
 import java.util.Scanner;
-import entities.A_class_Triangulo;
+import entities.A_class_AreaTriangulo;
 
-public class A_areaTriangulo {
+public class A_AreaTriangulo {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
@@ -17,13 +17,13 @@ public class A_areaTriangulo {
 			System.out.print("Digite o valor do lado C: ");
 			double ladoC = leitor.nextDouble();
 			
-			A_class_Triangulo forma = new A_class_Triangulo(ladoA, ladoB, ladoC);
-			double areaForma = forma.calcularArea();
-			
-			System.out.printf(" -> A área do triângulo é: %.2f %n%n", areaForma);
+			A_class_AreaTriangulo forma = new A_class_AreaTriangulo(ladoA, ladoB, ladoC);
+			forma.calcularArea();
+			System.out.println(forma);
 			
 			System.out.print(" - Deseja continuar [S/N]? ");
 			continuar = leitor.next().trim().toUpperCase().charAt(0);
+			System.out.println("");
 		} while (continuar == 'S');
 		
 		leitor.close();
