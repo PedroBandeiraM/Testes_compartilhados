@@ -1,10 +1,9 @@
-package programs;
+package a_classeMetodos_construtorThis_toString;
 
 import java.util.Scanner;
 import java.util.Locale;
 import java.util.List;
 import java.util.ArrayList;
-import entities.D_class_Aluno;
 
 
 public class D_Aluno {

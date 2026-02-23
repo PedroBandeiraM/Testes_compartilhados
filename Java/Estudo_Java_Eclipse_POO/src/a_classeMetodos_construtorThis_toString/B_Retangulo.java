@@ -1,7 +1,6 @@
-package programs;
+package a_classeMetodos_construtorThis_toString;
 
 import java.util.Scanner;
-import entities.B_class_Retangulo;
 
 public class B_Retangulo {
 

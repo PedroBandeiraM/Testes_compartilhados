@@ -1,7 +1,6 @@
-package programs;
+package a_classeMetodos_construtorThis_toString;
 
 import java.util.Scanner;
-import entities.C_class_Salario;
 
 public class C_Salario {
 

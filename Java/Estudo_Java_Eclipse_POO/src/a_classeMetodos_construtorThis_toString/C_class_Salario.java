@@ -1,4 +1,4 @@
-package entities;
+package a_classeMetodos_construtorThis_toString;
 
 public class C_class_Salario {
 	String nome;

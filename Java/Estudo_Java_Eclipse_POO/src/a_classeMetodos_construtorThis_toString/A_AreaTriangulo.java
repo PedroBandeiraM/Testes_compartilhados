@@ -1,7 +1,6 @@
-package programs;
+package a_classeMetodos_construtorThis_toString;
 
 import java.util.Scanner;
-import entities.A_class_AreaTriangulo;
 
 public class A_AreaTriangulo {
 

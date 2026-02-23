@@ -4,10 +4,9 @@
  *  - Constante (final)
  */
 
-package programs;
+package b_membrosEstaticos_constante;
 
 import java.util.Scanner;
-import entities.E_class_ConversorMoeda;
 
 public class E_ConversorMoeda {
 

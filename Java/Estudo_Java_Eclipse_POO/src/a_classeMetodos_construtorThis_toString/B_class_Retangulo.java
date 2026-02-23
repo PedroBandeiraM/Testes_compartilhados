@@ -1,4 +1,4 @@
-package entities;
+package a_classeMetodos_construtorThis_toString;
 
 public class B_class_Retangulo {
 	double altura;
