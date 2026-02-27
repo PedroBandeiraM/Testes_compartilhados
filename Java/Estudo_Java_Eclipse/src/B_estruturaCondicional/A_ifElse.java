@@ -2,7 +2,7 @@ package B_estruturaCondicional;
 
 import java.time.LocalTime;
 
-public class A_if_else {
+public class A_ifElse {
 
 		public static void main(String[] args) {
 			int hora_atual = LocalTime.now().getHour();

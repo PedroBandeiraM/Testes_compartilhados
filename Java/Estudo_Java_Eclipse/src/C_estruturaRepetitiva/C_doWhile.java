@@ -3,7 +3,7 @@ package C_estruturaRepetitiva;
 import java.util.Scanner;
 import java.util.Locale;
 
-public class C_do_while {
+public class C_doWhile {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

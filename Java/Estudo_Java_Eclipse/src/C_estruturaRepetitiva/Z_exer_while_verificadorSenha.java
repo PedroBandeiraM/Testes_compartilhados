@@ -2,7 +2,7 @@ package C_estruturaRepetitiva;
 
 import java.util.Scanner;
 
-public class Z_exer_verificadorSenha {
+public class Z_exer_while_verificadorSenha {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);

@@ -5,7 +5,6 @@ import java.util.Locale;
 import java.util.List;
 import java.util.ArrayList;
 
-
 public class D_Aluno {
 
 	public static void main(String[] args) {

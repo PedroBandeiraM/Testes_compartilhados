@@ -2,15 +2,13 @@ package C_estruturaRepetitiva;
 
 import java.util.Scanner;
 
-public class Z_exer_menuCombustivel {
+public class Z_exer_doWhile_menuCombustivel {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
-		int alcool = 0;
-		int gasolina = 0;
-		int diesel = 0;		
+		int alcool = 0, gasolina = 0, diesel = 0, opcao;	
 		
-		while (true) {
+		do {
 			System.out.print("""
 					- Escolha uma opção de abastecimento:
 					[1] Álcool
@@ -19,7 +17,7 @@ public class Z_exer_menuCombustivel {
 					[4] Sair
 					->  """);
 			
-			int opcao = leitor.nextInt();
+			opcao = leitor.nextInt();
 			leitor.nextLine();
 			
 			switch (opcao) {
@@ -33,9 +31,7 @@ public class Z_exer_menuCombustivel {
 				diesel += 1;
 				break;
 			case 4:
-				for (int i = 0; i < 4; i++) {
-				    System.out.println();
-				}
+				System.out.println();
 				
 				System.out.printf("""
 						
@@ -47,19 +43,17 @@ public class Z_exer_menuCombustivel {
 						""", alcool, gasolina, diesel);
 				
 				System.out.println(" *Programa encerrado.");
-				leitor.close();
-				System.exit(0);
+				break;
 			default:
-				System.out.println(" *Valor digitado incorreto. Tente nopvamente.");
+				System.out.println(" *Valor digitado incorreto. Tente novamente.");
 				break;
 			}
 			
-			for (int i = 0; i < 4; i++) {
-			    System.out.println();
-			}
+			System.out.println();
 			
-		}
+		} while (opcao != 4);
 		
+		leitor.close();
 	}
 
 }

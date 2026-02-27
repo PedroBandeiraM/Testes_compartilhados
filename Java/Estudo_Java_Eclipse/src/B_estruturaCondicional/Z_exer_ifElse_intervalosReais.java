@@ -2,7 +2,7 @@ package B_estruturaCondicional;
 
 import java.util.Scanner;
 
-public class Z_exer_intervalosReais {
+public class Z_exer_ifElse_intervalosReais {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);

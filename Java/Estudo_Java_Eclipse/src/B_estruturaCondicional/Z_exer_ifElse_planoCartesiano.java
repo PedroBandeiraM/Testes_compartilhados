@@ -3,7 +3,7 @@ package B_estruturaCondicional;
 import java.util.Scanner;
 import java.util.Locale;
 
-public class Z_exer_planoCartesiano {
+public class Z_exer_ifElse_planoCartesiano {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

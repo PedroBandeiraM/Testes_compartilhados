@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Z_exer_parImparIntervalo {
+public class Z_exer_for_parImparIntervalo {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);

@@ -2,7 +2,7 @@ package C_estruturaRepetitiva;
 
 import java.util.Scanner;
 
-public class Z_exer_fatorial {
+public class Z_exer_for_fatorial {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
