@@ -13,7 +13,6 @@ public class Z_exer_lista_Funcionarios {
 		int opcao, id;
 		double salario;
 		
-		
 		do {
 			System.out.println("\n=-=-=-=-=-= Funcionários =-=-=-=-=-=\n");
 			

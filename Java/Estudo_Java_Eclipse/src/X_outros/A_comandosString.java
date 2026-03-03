@@ -1,4 +1,4 @@
-package E_outros;
+package X_outros;
 
 import java.util.Scanner;
 
