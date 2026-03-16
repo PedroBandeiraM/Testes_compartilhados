@@ -1,4 +1,4 @@
-package e_enumeracoes;
+package h_enumeracoes;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
