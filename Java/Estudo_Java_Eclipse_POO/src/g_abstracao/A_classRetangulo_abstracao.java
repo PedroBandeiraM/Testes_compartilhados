@@ -1,0 +1,16 @@
+package g_abstracao;
+
+public class A_classRetangulo_abstracao extends A_classFormas_abstracao {
+	private Double largura, altura;
+	
+	public A_classRetangulo_abstracao(String cor, double largura, double altura) {
+		super(cor);
+		this.largura = largura;
+		this.altura = altura;
+	}
+	
+	@Override
+	public double calcularArea() {
+		return largura * altura;
+	}
+}
