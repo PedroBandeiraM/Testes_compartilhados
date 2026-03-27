@@ -1,7 +1,7 @@
 package e_tratamentoErros;
 
 import java.time.LocalDate;
-import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class Z_exer_classReserva_tryCatch extends Z_exer_app_tryCatch {
 	private Integer numQuarto;
@@ -14,24 +14,28 @@ public class Z_exer_classReserva_tryCatch extends Z_exer_app_tryCatch {
 	}
 	
 	public Integer duracao() {
-		return Period.between(checkIn, checkOut).getDays();
+		return (int) ChronoUnit.DAYS.between(checkIn, checkOut);
 	}
 	
 	public static Integer duracao(LocalDate d1, LocalDate d2) {
-		return Period.between(d1, d2).getDays();
+		return (int) ChronoUnit.DAYS.between(d1, d2);
 	}
 	
-	public void atualizarDatas(LocalDate novoCheckIn, LocalDate novoCheckOut) throws Z_exer_classDataInvalida {
+	public void atualizarDatas(LocalDate novoCheckIn, LocalDate novoCheckOut) { // throws não é necessário, pois a exceção é tratada com try-catch
 		try {
-			if (duracao(novoCheckIn, LocalDate.now()) > 0) {
+			if (duracao(novoCheckIn, novoCheckOut) == 0) {
+				throw new Z_exer_classDataInvalida(" ***A duração da hospedagem deve ser de no mínimo 1 dia");
+			}
+			else if (novoCheckIn.isBefore(LocalDate.now())) {
 				throw new Z_exer_classDataInvalida(" ***A nova data de check-in é inválida: A data deve ser maior que a data atual");
-			} else if (duracao(novoCheckIn, novoCheckOut) < 0){
-				throw new Z_exer_classDataInvalida(" ***As novas data são inválidas: A data de check-in deve ser maior que a data de check-out");
-			} else {
+			} 
+			else if (novoCheckOut.isBefore(novoCheckIn)){
+				throw new Z_exer_classDataInvalida(" ***As novas data são inválidas: A data de check-in deve ser menor que a data de check-out");
+			} 
+			else {
 				this.checkIn = novoCheckIn;
 				this.checkOut = novoCheckOut;
 				System.out.println(" ***Datas atualizadas com sucesso!");
-				System.out.println(this);
 			}
 		} catch (Z_exer_classDataInvalida e) {
 			System.out.println(e.getMessage());
@@ -47,6 +51,8 @@ public class Z_exer_classReserva_tryCatch extends Z_exer_app_tryCatch {
 		texto.append(checkIn.format(formatador));
 		texto.append(" | Check-out: ");
 		texto.append(checkOut.format(formatador));
+		texto.append(" | Duração da hospedagem: ");
+		texto.append(duracao());
 		
 		return texto.toString();
 	}

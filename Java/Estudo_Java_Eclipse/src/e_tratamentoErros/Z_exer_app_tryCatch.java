@@ -8,7 +8,7 @@ public class Z_exer_app_tryCatch {
 	public static DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	public static Scanner leitor = new Scanner(System.in);
 	
-	public static void main(String[] args) throws Z_exer_classDataInvalida {
+	public static void main(String[] args) throws Z_exer_classDataInvalida { // Precisa de throws, pois a excessão não é tratada aqui, mas sim no método da outra classe (Reserva)
 		LocalDate checkIn, checkOut;
 		int numQuarto;
 		
@@ -30,6 +30,7 @@ public class Z_exer_app_tryCatch {
 		System.out.print("Digite a data de check-out (dd/mm/yyyy): ");
 		checkOut = LocalDate.parse(leitor.nextLine(), formatador);		
 		
-		reserva.atualizarDatas(checkIn, checkOut);	
+		reserva.atualizarDatas(checkIn, checkOut);
+		System.out.println(reserva);
 	}
 }
