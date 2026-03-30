@@ -8,18 +8,20 @@ public class A_tryCatch {
 		Scanner leitor = new Scanner(System.in);
 	
 		try {
+			System.out.print("Digite nomes separados por espaço: ");
 			String[] vetor = leitor.nextLine().split(" ");
+			System.out.print("Digite a posição do nome que deseja ver: ");
 			int indice = leitor.nextInt();
 			leitor.nextLine();
 			
-			System.out.println(vetor[indice]);
+			System.out.println(" - Nome: " + vetor[indice]);
 		} catch (Exception e) {
-			System.out.println("Erro: " + e);
-			System.out.println("Mensagem localizada: " + e.getLocalizedMessage() );
+			System.out.println("\nnErro: " + e);
 			System.out.println("Mensagem: " + e.getMessage());
+			System.out.println("Erro completo:");
 			e.printStackTrace();
 		} finally {
-			System.out.println(" ***Programa finalizado.");
+			System.out.println("\n ***Programa finalizado.");
 		}
 		
 		

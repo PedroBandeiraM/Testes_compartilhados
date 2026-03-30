@@ -3,7 +3,7 @@ package e_tratamentoErros;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Z_exer_classReserva_tryCatch extends Z_exer_app_tryCatch {
+public class Z_exer_classReserva_tryCatch extends Z_exer_appCalendario_tryCatch {
 	private Integer numQuarto;
 	private LocalDate checkIn, checkOut;
 	

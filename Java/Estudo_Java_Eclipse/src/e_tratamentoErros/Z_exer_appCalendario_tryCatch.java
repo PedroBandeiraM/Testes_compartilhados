@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Z_exer_app_tryCatch {
+public class Z_exer_appCalendario_tryCatch {
 	public static DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	public static Scanner leitor = new Scanner(System.in);
 	
